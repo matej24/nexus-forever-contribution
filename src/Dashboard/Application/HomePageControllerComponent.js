@@ -1,5 +1,7 @@
 import React from 'react';
 import MainLayoutControllerComponent from "../../Common/Controllers/MainLayoutControllerComponent";
+import RandomizerComponent from "./Components/RandomizerComponent"
+
 
 class HomePageControllerComponent extends MainLayoutControllerComponent{
     constructor() {
@@ -8,9 +10,7 @@ class HomePageControllerComponent extends MainLayoutControllerComponent{
 
     getPageContent(){
         return (
-            <p>
-                I did it :)
-            </p>
+           <RandomizerComponent />
         )
     }
 }

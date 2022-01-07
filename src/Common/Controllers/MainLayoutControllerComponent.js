@@ -2,6 +2,7 @@ import React from "react";
 import BaseControllerComponent from "../BaseControllerComponent";
 import {Layout} from "antd";
 import HeaderComponent from "./Components/HeaderComponent";
+import FooterComponent from "./Components/FooterComponent";
 
 const {Content} = Layout;
 
@@ -23,7 +24,7 @@ class MainLayoutControllerComponent extends BaseControllerComponent {
                 <Content className={`page-content ${this.getBaseContentClass()}`}>
                     <>{this.getPageContent()}</>
                 </Content>
-                <p>FOOTER COMPONENT</p>
+              <FooterComponent/>
             </Layout>
         )
     }

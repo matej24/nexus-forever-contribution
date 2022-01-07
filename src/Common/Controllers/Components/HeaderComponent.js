@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FAQ_PAGE, HOME_PAGE } from '../../../Routing/RouteNames'
+import {UserOutlined} from "@ant-design/icons";
 
 export default function HeaderComponent() {
 
@@ -13,7 +14,7 @@ export default function HeaderComponent() {
     return (
         <div className='header-holder'>
             <div className='logo-holder'>
-                LOGO
+            <UserOutlined /><p>FRIEND's CORNER</p>
             </div>
             <div className='routes-holder'>
                 <Link className="router-link-custom" to={HOME_PAGE}>
