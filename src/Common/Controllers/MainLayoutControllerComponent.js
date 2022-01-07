@@ -1,6 +1,7 @@
 import React from "react";
 import BaseControllerComponent from "../BaseControllerComponent";
 import {Layout} from "antd";
+import HeaderComponent from "./Components/HeaderComponent";
 
 const {Content} = Layout;
 
@@ -18,7 +19,7 @@ class MainLayoutControllerComponent extends BaseControllerComponent {
     render() {
         return (
             <Layout style={{minHeight: "100%"}}>
-               <p>HEADER COMPONENT</p>
+               <HeaderComponent/>
                 <Content className={`page-content ${this.getBaseContentClass()}`}>
                     <>{this.getPageContent()}</>
                 </Content>
