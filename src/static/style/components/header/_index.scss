@@ -4,6 +4,23 @@
     align-items: center;
     min-height: 70px;
 
+    .logo-holder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $primary-aqua;
+        font-weight: bold;
+        font-size: 20px;
+        text-shadow: 2px 2px $primary-pink;
+        margin-left: 10px;
+
+
+        span{
+            color: $primary-pink;
+            margin-right: 5px;
+        }
+    }
+
 
     .routes-holder{
         display: flex;
@@ -30,7 +47,7 @@
                 color: $primary-aqua;
             }
 
-            border-bottom: 2px solid $primary-aqua;
+            border-bottom: 2px solid $primary-pink;
         }
     }
 }
