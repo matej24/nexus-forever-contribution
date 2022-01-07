@@ -1,0 +1,36 @@
+.header-holder{
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    min-height: 70px;
+
+
+    .routes-holder{
+        display: flex;
+        flex-grow: 2;
+        justify-content: center;
+        
+        .router-link-custom{
+            min-width: 120px;
+            justify-content: center;
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid transparent;
+
+            .route-name{
+                font-size: 20px;
+                font-weight: bold;
+                color: $primary-white;
+            }
+        }
+
+        .router-link-custom:hover{
+            .route-name{
+                color: $primary-aqua;
+            }
+
+            border-bottom: 2px solid $primary-aqua;
+        }
+    }
+}
